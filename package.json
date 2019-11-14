@@ -1,5 +1,7 @@
 {
   "name": "insta-ounce",
+  "main": "server/server.js",
+  "proxy": "http://localhost:4444",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

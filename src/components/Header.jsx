@@ -1,10 +1,15 @@
 import React from 'react'
+import logo from '../assets/instamilligram.svg'
+import './Header.css'
 
 const Header = () => {
     return (
-        <div>
-            Header
-        </div>
+        <header>
+            <div className="profile-pic"></div>
+            <img src={logo} alt="logo"/>
+            <div className="logout"></div>
+            
+        </header>
     )
 }
 
