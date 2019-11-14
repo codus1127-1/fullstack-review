@@ -1,3 +1,7 @@
+DROP TABLE IF EXISTS homies_hash;
+DROP TABLE IF EXISTS posts;
+DROP TABLE IF EXISTS homies;
+
 create table homies (
     user_id serial primary key,
     name varchar,
