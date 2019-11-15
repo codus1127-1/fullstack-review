@@ -54,3 +54,7 @@ table {
 .App {
   text-align: center;
 }
+
+body {
+	background-color: rgb(83, 83, 83);
+}

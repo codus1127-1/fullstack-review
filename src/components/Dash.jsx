@@ -4,13 +4,26 @@ import Add from './Add'
 
 class Dash extends Component {
     state = {
-        posts: []
+        posts: [],
+        toggleAdd: false
     }
+
+    toggle = () => {
+        this.setState((prevState)=> {
+            return {
+                toggleAdd: !prevState.toggleAdd
+            }
+        })
+    }
+
     render() {
         return (
             <div>
+                <button onClick={this.toggle} >Create a Post</button>
             <Post/>
-            <Add/>
+            <div>
+                {this.state.toggleAdd && <Add/>}
+            </div>
             </div>
         );
     }
